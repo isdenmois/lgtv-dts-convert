@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  margin: 0;
+}
+
+h1,
+.xl {
+  font-size: 32px;
+}
+
+h2,
+.l {
+  font-size: 24px;
+}
+
+h3,
+.m {
+  font-size: 18px;
+}
+
+h4,
+.s {
+  font-size: 14px;
+}

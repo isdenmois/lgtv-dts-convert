@@ -1,0 +1,40 @@
+:root {
+  --backgroundColor: #fcfcfd;
+  --textColor: #3c4d60;
+  --buttonColor: #1d9db3;
+  --whiteColor: #ffffff;
+  --selectionColor: #84b1c7;
+  --textSecondaryColor: #566f8a;
+  --progressPrimaryColor: #746b7f;
+  --progressSecondaryColor: #d8d5dc;
+  --successColor: #76dd78;
+  --errorColor: #ff6962;
+  --errorSecondaryColor: #ffb6b3;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+#app {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--backgroundColor);
+  overflow: hidden;
+  font-family: sans-serif;
+  color: var(--textColor);
+}
+
+#app {
+  padding: 16px;
+  flex: 1;
+  overflow: auto;
+}

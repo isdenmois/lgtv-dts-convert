@@ -1,0 +1,18 @@
+button {
+  background-color: var(--buttonColor);
+  border: none;
+  cursor: pointer;
+  color: var(--backgroundColor);
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: var(--selectionColor);
+}
+
+button.secondary:not(:hover) {
+  color: var(--textColor);
+  background-color: transparent;
+}
