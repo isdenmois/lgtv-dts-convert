@@ -36,10 +36,15 @@ export function convert(
         '-c:s',
         'copy',
         '-c:a',
-        'ac3',
+        'libopus',
         '-b:a',
-        '448k',
+        '128k',
+        '-af',
+        'pan=stereo|c0=c2+0.30*c0+0.30*c4|c1=c2+0.30*c1+0.30*c5',
       )
+      .on('start', function (commandLine) {
+        console.log('Spawned Ffmpeg with command: ' + commandLine)
+      })
       .on('progress', ({ percent }) => {
         console.log('progress ' + percent + '%')
         onProgress(percent)
